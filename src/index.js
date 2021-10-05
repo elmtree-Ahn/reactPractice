@@ -6,14 +6,33 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-let store = createStore(() => {
-	return [
-		{ id : 0,
-			name : 'Luffy',
-			job : 'FE Dev'
-		}
+
+
+let defualtState = [
+		{ age : 32,	name : 'Luffy',	job : 'FE Dev'},
+    { age : 27, name : 'Ahn', job : 'FE Dev'}
 	]
-});
+
+function reducer(state = defualtState, 액션) {
+  if (액션.type === '나이증가') {
+
+    let copy = [...state];
+    copy[0].age++;
+    return copy
+
+  } else if (액션.type === '나이감소') {
+
+    let copy = [...state];
+    copy[0].age--;
+    return copy
+
+  } 
+  else {
+    return state
+  }
+} 
+
+let store = createStore(reducer);
 
 ReactDOM.render(
   <React.StrictMode>
