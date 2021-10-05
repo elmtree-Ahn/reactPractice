@@ -5,15 +5,17 @@ import Info from './component/useState/Info';
 import InfoPlus from './component/useEffect/InfoPlus';
 import InfoPlusMount from './component/useEffect/InfoPlusMount';
 import InfoPlusOnlyName from './component/useEffect/InfoPlusOnlyName';
+import ReduxTest from './component/reduxTest';
 
 function App() {
   return (
     <div className="App">
-      {/* <Counter /> */}
-      {/* <Info /> */}
-      {/* <InfoPlus /> */}
-      {/* <InfoPlusMount /> */}
-      <InfoPlusOnlyName/>
+      <ReduxTest />
+      {/* <Counter />
+      <Info />
+      <InfoPlus />
+      <InfoPlusMount />
+      <InfoPlusOnlyName/> */}
     </div>
   );
 }
