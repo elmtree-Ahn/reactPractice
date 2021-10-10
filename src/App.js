@@ -6,16 +6,18 @@ import InfoPlus from './component/useEffect/InfoPlus';
 import InfoPlusMount from './component/useEffect/InfoPlusMount';
 import InfoPlusOnlyName from './component/useEffect/InfoPlusOnlyName';
 import ReduxTest from './component/reduxTest';
+import EventPractice from './component/이벤트핸들러/EventPractice';
 
 function App() {
   return (
     <div className="App">
-      <ReduxTest />
-      {/* <Counter />
-      <Info />
-      <InfoPlus />
-      <InfoPlusMount />
-      <InfoPlusOnlyName/> */}
+      <EventPractice />
+      {/* <ReduxTest /> */}
+      {/* <Counter /> */}
+      {/* <Info /> */}
+      {/* <InfoPlus /> */}
+      {/* <InfoPlusMount /> */}
+      {/* <InfoPlusOnlyName/> */}
     </div>
   );
 }
